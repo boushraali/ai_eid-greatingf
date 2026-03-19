@@ -72,7 +72,7 @@ function currentTemplate() {
 
 function cardMarkup(includeId = false) {
   const template = currentTemplate();
-  const name = escapeHtml(state.recipientName.trim() || "بشـرى علي");
+  const name = escapeHtml(state.recipientName.trim() || "-------");
   const cardId = includeId ? 'id="final-card"' : "";
 
   return `
@@ -175,7 +175,7 @@ function primaryPanelMarkup() {
     return `
       <div class="step-content">
         <h2 class="section-title">اختيار المقاس</h2>
-        <div class="section-subtitle">اختاري شكل البطاقة حسب الاستخدام.</div>
+        <div class="section-subtitle">اختار شكل البطاقة حسب الاستخدام.</div>
         <div class="option-grid option-grid--3">${layoutOptionsMarkup()}</div>
       </div>
     `;
