@@ -72,7 +72,7 @@ function currentTemplate() {
 
 function cardMarkup(includeId = false) {
   const template = currentTemplate();
-  const name = escapeHtml(state.recipientName.trim() || "--------");
+  const name = escapeHtml(state.recipientName.trim() || "الاسم هنا ");
   const cardId = includeId ? 'id="final-card"' : "";
 
   return `
